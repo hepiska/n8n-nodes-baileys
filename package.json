@@ -1,0 +1,51 @@
+{
+  "name": "n8n-nodes-baileys",
+  "version": "0.1.0",
+  "description": "Basic starter Baileys nodes for n8n community node development.",
+  "license": "MIT",
+  "author": {
+    "name": "hepiska"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "baileys",
+    "whatsapp"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.23.1",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [],
+    "nodes": [
+      "dist/nodes/BaileysAction/BaileysAction.node.js",
+      "dist/nodes/BaileysMessageBuilder/BaileysMessageBuilder.node.js",
+      "dist/nodes/BaileysConnectionInfo/BaileysConnectionInfo.node.js",
+      "dist/nodes/BaileysTrigger/BaileysTrigger.node.js"
+    ]
+  }
+}
