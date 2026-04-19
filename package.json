@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-baileys",
+  "name": "@hepiska/n8n-nodes-baileys",
   "version": "1.0.4",
   "description": "Basic starter Baileys nodes for n8n community node development.",
   "license": "MIT",
