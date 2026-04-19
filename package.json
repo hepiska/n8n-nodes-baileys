@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-baileys",
-  "version": "0.1.1",
+  "version": "1.0.4",
   "description": "Basic starter Baileys nodes for n8n community node development.",
   "license": "MIT",
   "author": {
@@ -22,7 +22,8 @@
     "lint": "n8n-node lint",
     "lint:fix": "n8n-node lint --fix",
     "release": "n8n-node release",
-    "prepublishOnly": "n8n-node prerelease"
+    "prepublishOnly": "n8n-node prerelease",
+    "push:tag": "VERSION=$(node -p \"require('./package.json').version\") && git tag -a \"v$VERSION\" -m \"Release v$VERSION\" && git push origin \"v$VERSION\""
   },
   "peerDependencies": {
     "n8n-workflow": "*"
